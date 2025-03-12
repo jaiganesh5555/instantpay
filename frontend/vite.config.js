@@ -1,7 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
+import tailwindcss from 'tailwindcss'; // Import Tailwind CSS
+import autoprefixer from 'autoprefixer'; // Import Autoprefixer
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+    plugins: [react(), tailwindcss()],
+
+
+});
