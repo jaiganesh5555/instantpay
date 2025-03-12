@@ -4,7 +4,7 @@ import Signup from "./pages/signup.jsx";
 import Home from "./pages/Homepage.jsx";
 import Signin from "./pages/signin.jsx";
 import { Dashboard } from "./pages/Dashboard.jsx"; 
-import { Sendmoney } from "./pages/sendmoney.jsx";
+import { Sendmoney } from "./pages/Sendmoney.jsx";
 
 export const App = () => {
   return (
