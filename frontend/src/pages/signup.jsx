@@ -26,7 +26,7 @@ const Signup = () => {
             password,
         };
         try {
-            const response = await axios.post("http://localhost:3000/api/v1/user/signup", userData, {
+            const response = await axios.post("https://instantpay-five.vercel.app/api/v1/user/signup", userData, {
                 headers: {
                     "Content-Type": "application/json",
                 },
