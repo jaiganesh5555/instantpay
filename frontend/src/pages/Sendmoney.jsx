@@ -21,7 +21,7 @@ export const Sendmoney = () => {
     const token = localStorage.getItem("token");
     try {
       const res = await axios.post(
-        "https://instantpay-five.vercel.app/api/v1/account/transfer",
+        "https://instantpay-984sxyrc7-jai-ganesh-gantas-projects.vercel.app/api/v1/account/transfer",
         { to: id, amount },
         { headers: { Authorization: `Bearer ${token}` } }
       );
