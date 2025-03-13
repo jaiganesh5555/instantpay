@@ -6,20 +6,6 @@ const { default: mongoose } = require('mongoose');
 
 const router = express.Router();
 
-router.get("/balance", authMiddleware, async(req, res) => {
-    const account = await Account.findOne({
-        userId: req.userId
-    });
-
-    if (!account) {
-        return res.status(404).json({
-            message: "Account not found"
-        });
-    }
-    return res.json({
-        balance: account.balance
-    })
-});
 
 router.post("/transfer", authMiddleware, async(req, res) => {
     const session = await mongoose.startSession();
