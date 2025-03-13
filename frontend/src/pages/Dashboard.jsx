@@ -15,7 +15,7 @@ export function Dashboard() {
   const loggedInUserId = localStorage.getItem("userId"); 
   
   useEffect(() => {
-    axios.get(`https://instantpay-984sxyrc7-jai-ganesh-gantas-projects.vercel.app/api/v1/user/bulky?filter=${filter}`)
+    axios.get(`https://instantpay-bco0pm9ov-jai-ganesh-gantas-projects.vercel.app/api/v1/user/bulky?filter=${filter}`)
       .then(response => {
         console.log("Fetched users:", response.data);
         setUsers(response.data.users || []); 
