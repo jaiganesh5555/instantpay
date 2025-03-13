@@ -26,7 +26,7 @@ const Signup = () => {
             password,
         };
         try {
-            const response = await axios.post("https://instantpay-984sxyrc7-jai-ganesh-gantas-projects.vercel.app/api/v1/user/signup", userData, {
+            const response = await axios.post("https://instantpay-bco0pm9ov-jai-ganesh-gantas-projects.vercel.app/api/v1/user/signup", userData, {
                 headers: {
                     "Content-Type": "application/json",
                 },
